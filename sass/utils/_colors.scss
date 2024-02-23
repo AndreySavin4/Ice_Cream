@@ -1,0 +1,16 @@
+$colors: (
+  "main": rgb(19, 19, 19),
+  "primary": rgb(248, 210, 78),
+  "white": rgb(252, 252, 252),
+  "totalBlack": rgb(0, 0, 0),
+  "badge": rgb(214, 147, 109),
+  "gray": rgb(171, 171, 171),
+  "rarely": rgb(122, 122, 122),
+  "opacity": rgba(255, 255, 255, 0),
+  "green": rgb(10, 136, 23),
+  "background": rgb(132, 161, 120),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

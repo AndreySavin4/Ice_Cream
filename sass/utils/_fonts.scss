@@ -1,0 +1,9 @@
+$fonts: (
+  "main": Montserrat,
+  "secondary": Seymour One,
+  "third": DM Sans,
+);
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}

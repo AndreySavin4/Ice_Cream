@@ -1,0 +1,37 @@
+@import "../utils/colors";
+@import "../utils/fonts";
+
+.header {
+  padding: 12px 0 50px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: none;
+}
+
+.header__item {
+}
+
+.header__link {
+}
+
+.btn_container {
+}
+
+.moble__btn {
+  border: none;
+  background-color: inherit;
+}
+
+.mobile_menu {
+}
+
+.header__btn {
+  display: none;
+}

@@ -1,0 +1,24 @@
+@import "../utils/colors";
+@import "../utils/fonts";
+
+.hero {
+}
+
+.hero__wrap {
+}
+
+.hero__title {
+  font-family: getFont("secondary");
+  font-size: 26;
+  line-height: 32.68px;
+  letter-spacing: 4%;
+
+  text-transform: uppercase;
+  color: getColor("white");
+}
+
+.btn_container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

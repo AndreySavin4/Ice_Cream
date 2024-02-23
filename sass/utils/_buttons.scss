@@ -1,0 +1,46 @@
+@import "./colors";
+@import "./fonts";
+
+.button--border {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  padding: 11px 24px;
+  border: 2px solid getColor("primary");
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: calc(15 / 14);
+
+  color: getColor("totalBlack");
+
+  background-color: getColor("opacity");
+
+  &:hover,
+  &:focus {
+    border-color: getColor("green");
+  }
+
+  &:focus {
+    color: getColor("white");
+  }
+}
+
+.button--withoutBorder {
+  padding: 11px 0;
+  border: 2px;
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: calc(15 / 14);
+
+  text-decoration: underline;
+
+  color: getColor("primary");
+
+  background-color: getColor("opacity");
+}
