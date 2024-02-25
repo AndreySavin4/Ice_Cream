@@ -1,0 +1,43 @@
+@import "../utils/colors";
+@import "../utils/fonts";
+
+.product {
+  padding: 60px 0;
+  background-image: url("../../img/background/mobile.jpg");
+  background-position: left 61% top 34%;
+}
+
+.product__pretitle {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: calc(22 / 18);
+  text-align: center;
+}
+
+.product__title {
+  font-family: getFont("secondary");
+  font-size: 30px;
+  font-weight: 400;
+  line-height: calc(38 / 30);
+  letter-spacing: 0.1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product__list {
+}
+
+.product__item {
+}
+
+.product__img {
+}
+
+.product__desc {
+}
+
+.product__text {
+}
+
+.product__svg {
+}
