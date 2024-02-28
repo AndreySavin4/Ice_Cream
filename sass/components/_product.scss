@@ -2,12 +2,21 @@
 @import "../utils/fonts";
 
 .product {
-  padding: 60px 0;
+  padding: 61px 0;
   background-image: url("../../img/background/mobile.jpg");
-  background-position: left 61% top 34%;
+  background-position: 61% -16%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../img/background/mobile@2x.jpg");
+    background-size: 885px 1242px;
+  }
 }
 
 .product__pretitle {
+  margin-bottom: 12px;
+
   font-size: 18px;
   font-weight: 800;
   line-height: calc(22 / 18);
@@ -15,29 +24,132 @@
 }
 
 .product__title {
+  margin-bottom: 148px;
+
   font-family: getFont("secondary");
   font-size: 30px;
   font-weight: 400;
-  line-height: calc(38 / 30);
+  line-height: calc(37 / 30);
   letter-spacing: 0.1px;
+
   text-align: center;
   text-transform: uppercase;
 }
 
 .product__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 168px;
 }
 
 .product__item {
-}
+  position: relative;
 
-.product__img {
+  padding: 0 40px 16px 40px;
+
+  border-radius: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(1) {
+    background-color: getColor("itemBg");
+
+    &::before {
+      background-image: url("../../img/ice-cream/kelsey-curtis-G5ZenftPPOA-unsplash\ 2.png");
+      box-shadow: 0px 11px 0px 0px rgb(174 198 165),
+        0px 11px 11px 2px rgba(0 0 0 / 0.62);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../img/ice-cream/kelsey-curtis-G5ZenftPPOA-unsplash\ 2@2x.png");
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: getColor("bgPrimary");
+
+    &::before {
+      background-image: url("../../img/ice-cream/pariwat-pannium-0_qbeF_0zn8-unsplash\ 1.png");
+      box-shadow: 0px 11px 0px 0px rgb(239 212 120),
+        0px 11px 11px 2px rgba(0 0 0 / 0.62);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../img/ice-cream/pariwat-pannium-0_qbeF_0zn8-unsplash\ 1@2x.png");
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: getColor("bgChocolate");
+
+    &::before {
+      background-image: url("../../img/ice-cream/victor-rutka-4FujjkcI40g-unsplash\ 1.png");
+      box-shadow: 0px 11px 0px 0px rgb(214 147 109),
+        0px 11px 11px 2px rgba(0 0 0 / 0.62);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../img/ice-cream/victor-rutka-4FujjkcI40g-unsplash\ 1@2x.png");
+      }
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 0 60px 16px 60px;
+  }
 }
 
 .product__desc {
+  margin-top: 126px;
+  margin-bottom: 40px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.1px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .product__text {
+  margin-bottom: 101px;
+
+  width: 200px;
+
+  font-size: 14px;
+  line-height: calc(24.7 / 14);
+  letter-spacing: 0.1px;
+  text-align: center;
 }
 
 .product__svg {
+  display: block;
+  margin: 0 auto;
+
+  fill: getColor("main");
 }
