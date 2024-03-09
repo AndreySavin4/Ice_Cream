@@ -1,0 +1,114 @@
+@import "../utils/colors";
+@import "../utils/fonts";
+
+.contacts {
+  padding-bottom: 60px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0 0 0 / 0) 25%,
+    getColor("background") 25%
+  );
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contacts__item {
+  width: 280px;
+
+  padding: 16px 32px 0 32px;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px getColor("box");
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+
+  background-color: getColor("white");
+}
+
+.contacts__container {
+  padding: 24px 0;
+
+  border-bottom: 1px solid getColor("border");
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.contacts__institution {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 22px;
+
+  border-radius: 4px;
+
+  line-height: calc(14.4 / 12);
+
+  background-color: getColor("primary");
+}
+
+.contacts__city {
+  margin-bottom: 8px;
+
+  line-height: calc(22.3 / 12);
+}
+
+.contacts__address {
+  line-height: calc(22 / 12);
+
+  color: getColor("bgChocolate");
+}
+
+.contacts__wrap:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contacts__day {
+  line-height: calc((22 / 12));
+  letter-spacing: 0;
+}
+
+.contacts__time {
+  line-height: calc((22 / 12));
+  letter-spacing: 0;
+
+  color: getColor("gray");
+}
+
+.contacts__date {
+  display: inline-block;
+  color: getColor("main");
+
+  line-height: calc(19.2 / 12);
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.contacts__itemBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 20px;
+}
+
+.contacts__btn {
+  &:nth-child(1) {
+    @extend .button--fullBg;
+    padding: 12px 40px;
+  }
+
+  &:nth-child(2) {
+    @extend .button--border;
+    padding: 12px 52px;
+  }
+}

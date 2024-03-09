@@ -3,6 +3,7 @@
 
 .header {
   padding: 12px 0 50px;
+  background-color: getColor("background");
   @media screen and (min-width: $mobile) {
     padding: 14px 0 40px;
   }

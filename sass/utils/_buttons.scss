@@ -1,46 +1,91 @@
 @import "./colors";
 @import "./fonts";
 
-.button--border {
+%button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 7px;
-
-  padding: 11px 24px;
-  border: 2px solid getColor("primary");
-  border-radius: 10px;
 
   font-size: 12px;
   font-weight: 600;
   line-height: calc(15 / 14);
+
+  border-radius: 10px;
+
+  color: getColor("totalBlack");
+
+  background-color: getColor("primary");
+
+  cursor: pointer;
+}
+
+.button--fullBg {
+  @extend %button;
+  gap: 4px;
+
+  padding: 12px 34px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: calc(18 / 14);
+
+  border: none;
+
+  &:hover {
+    background-color: getColor("green");
+  }
+
+  &:focus,
+  &:focus .icon__svg {
+    background-color: getColor("green");
+    color: getColor("white");
+    fill: getColor("white");
+  }
+}
+
+.button--border {
+  @extend %button;
+  gap: 7px;
+
+  padding: 11px 24px;
+  border: 2px solid getColor("primary");
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: calc(18 / 14);
 
   color: getColor("totalBlack");
 
   background-color: getColor("opacity");
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: getColor("green");
   }
 
-  &:focus {
+  &:focus,
+  &:focus .icon__svg {
+    border-color: getColor("green");
     color: getColor("white");
+    fill: getColor("white");
   }
 }
 
 .button--withoutBorder {
+  @extend %button;
   padding: 11px 0;
   border: 2px;
-  border-radius: 10px;
-
-  font-size: 12px;
-  font-weight: 600;
-  line-height: calc(15 / 14);
 
   text-decoration: underline;
 
   color: getColor("primary");
 
   background-color: getColor("opacity");
+
+  &:hover {
+    color: getColor("green");
+  }
+
+  &:focus {
+    color: getColor("white");
+  }
 }

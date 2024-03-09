@@ -3,15 +3,6 @@
 
 .product {
   padding: 61px 0;
-  background-image: url("../../img/background/mobile.jpg");
-  background-position: 61% -16%;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../../img/background/mobile@2x.jpg");
-    background-size: 885px 1242px;
-  }
 }
 
 .product__pretitle {

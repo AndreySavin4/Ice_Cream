@@ -4,6 +4,7 @@
 .hero {
   position: relative;
   height: 403px;
+  background-color: getColor("background");
   background-image: url("../../img/header_img/mobile.png"),
     url("../../img/header_img/dots320.png");
   background-repeat: no-repeat, no-repeat;

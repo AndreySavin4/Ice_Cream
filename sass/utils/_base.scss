@@ -8,7 +8,19 @@ body {
   font-style: normal;
 
   color: getColor("main");
-  background-color: getColor("background");
+  background-image: url("../../img/background/mobile.jpg");
+
+  background-repeat: repeat-y;
+
+  background-position-x: 61%;
+  background-position-y: 12%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../img/background/mobile@2x.jpg");
+    background-size: 885px 1242px;
+  }
 }
 
 .visually-hidden {

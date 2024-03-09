@@ -64,6 +64,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <h1 class="visually-hidden">Ice cream</h1>
 
@@ -146,46 +147,243 @@
 
       <section class="about">
         <div class="container">
-          <p>tradition and love</p>
-          <h2>how it’s made?</h2>
+          <p class="about__pretitle">tradition and love</p>
+          <h2 class="about__title">how it’s made?</h2>
 
-          <img src="" alt="" />
+          <div class="about__wrapper">
+            <img
+              class="about__img"
+              src="./img/about/michael-martinelli-_nLlvmclDkc-unsplash 1.jpg"
+              alt="Сow eats grass in the meadow"
+            />
 
-          <p></p>
-          <button type="button"></button>
+            <div class="about__content">
+              <p class="about__text">
+                Ice is a place where you will become not only a little happier,
+                but also healthier. Health is the main value for us, and we
+                follow it when creating our handmade desserts.
+              </p>
+              <p class="about__description">
+                We use traditional recipes and 100% natural ingredients. Our
+                products are so natural that they can be given to children from
+                the age of three years. Sweets lovers can expect 55 types of ice
+                cream, 15 types of coffee and 23 milkshakes.
+              </p>
+              <p class="about__description">
+                This is enough to choose ice cream and coffee for any mood!
+              </p>
+            </div>
 
-          <ul>
-            <li>
-              <div>
-                <svg>
-                  <use></use>
+            <button class="button--fullBg" type="button">
+              Read more
+              <svg class="icon__svg" width="12" height="12">
+                <use href="./img/symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="about__list">
+            <li class="about__item">
+              <div class="about__iconBlock">
+                <svg class="about__icon" width="36" height="36">
+                  <use href="./img/symbol-defs.svg#icon-cow"></use>
                 </svg>
               </div>
-              <p></p>
-              <p></p>
+              <p class="about__info">721</p>
+              <p class="about__detail">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
-            <li>
-              <div>
-                <svg>
-                  <use></use>
+            <li class="about__item">
+              <div class="about__iconBlock">
+                <svg class="about__icon" width="36" height="36">
+                  <use href="./img/symbol-defs.svg#icon-weight"></use>
                 </svg>
               </div>
-              <p></p>
-              <p></p>
+              <p class="about__info">16kg</p>
+              <p class="about__detail">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
-            <li>
-              <div>
-                <svg>
-                  <use></use>
+            <li class="about__item">
+              <div class="about__iconBlock">
+                <svg class="about__icon" width="36" height="36">
+                  <use href="./img/symbol-defs.svg#icon-ice-crema"></use>
                 </svg>
               </div>
-              <p></p>
-              <p></p>
+              <p class="about__info">84</p>
+              <p class="about__detail">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
             </li>
           </ul>
         </div>
       </section>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__content">
+            <img
+              class="gallry__pic"
+              src="./img/gallery/brooke-lark-8beTH4VkhLI-unsplash 1.jpg"
+              alt="a lot of ice cream"
+            />
+            <div class="gallery__wrap">
+              <img src="./img/gallery/person.png" alt="person" />
+
+              <p class="gallery__comment">
+                I love visiting your cafe. You prepare the most delicious ice
+                cream in Los Angeles! In addition, you have beautiful serving,
+                cozy atmosphere and polite staff.
+              </p>
+
+              <p class="gallery__name">Emily, Los Angeles</p>
+            </div>
+            <ul class="gallery__list">
+              <li class="galeery__item">
+                <svg class="gallery__dot--active" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-Ellipse"></use>
+                </svg>
+              </li>
+              <li class="galeery__item">
+                <svg class="gallery__dot" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-Ellipse"></use>
+                </svg>
+              </li>
+              <li class="galeery__item">
+                <svg class="gallery__dot" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-Ellipse"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts__container">
+                <span class="contacts__institution">CAFE</span>
+                <p class="contacts__city">Chicago</p>
+                <a class="contacts__address" href="#"
+                  >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
+                >
+              </div>
+              <div class="contacts__container">
+                <div class="contacts__wrap">
+                  <p class="contacts__day">Monday - Friday</p>
+                  <p class="contacts__time">06:00 AM - 10:00 PM</p>
+                </div>
+                <div class="contacts__wrap">
+                  <p class="contacts__day">Saturday - Sunday</p>
+                  <p class="contacts__time">08:00 AM - 16:00 PM</p>
+                </div>
+              </div>
+              <div class="contacts__container">
+                <a class="contacts__date" href="#">+61(0) 383 766 284</a>
+                <a class="contacts__date" href="#">noreply@envato.com</a>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__container">
+                <span class="contacts__institution">FOODTRUCK</span>
+                <p class="contacts__city">Los Angeles</p>
+                <a class="contacts__address" href="#"
+                  >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
+                >
+              </div>
+              <div class="contacts__container">
+                <p class="contacts__day">Monday - Friday</p>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+
+                <p class="contacts__day">Saturday - Sunday</p>
+                <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <div class="contacts__container">
+                <a class="contacts__date" href="#">+61(0) 383 766 284</a>
+                <a class="contacts__date" href="#">noreply@envato.com</a>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__container">
+                <span class="contacts__institution">CAFE</span>
+                <p class="contacts__city">New York</p>
+                <a class="contacts__address" href="#"
+                  >726 Sterling Pl, Brooklyn, NY 11222, USA</a
+                >
+              </div>
+              <div class="contacts__container">
+                <p class="contacts__day">Monday - Friday</p>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+
+                <p class="contacts__day">Saturday - Sunday</p>
+                <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <div class="contacts__container">
+                <a class="contacts__date" href="#">+61(0) 383 766 284</a>
+                <a class="contacts__date" href="#">noreply@envato.com</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contacts__itemBtn">
+            <button class="contacts__btn">
+              Our Locations
+              <svg width="12" height="12">
+                <use href="./img/symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
+
+            <button class="contacts__btn">
+              Franchise
+              <svg class="icon__svg" width="12" height="12">
+                <use href="./img/symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__quote">
+          <h2 class="footer__title">homemade ice cream made</h2>
+          <p class="footer__pretitle">with passion</p>
+        </div>
+        <div class="footer__box">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#"
+                ><svg class="footer__icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-github"></use></svg
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"
+                ><svg class="footer__icon" width="20" height="16">
+                  <use href="./img/symbol-defs.svg#icon-telegram"></use></svg
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"
+                ><svg class="footer__icon" width="9" height="20">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+          </ul>
+          <p class="footer__contact">
+            Feel free to contact
+            <a class="footer__number" href="#">+61 (0) 383 766 284</a>
+          </p>
+        </div>
+        <div class="footer__line"></div>
+        <p class="footer__copyright">
+          &#169; 2022 - IceCream. All Rights Reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
