@@ -2,7 +2,7 @@
 @import "../utils/fonts";
 
 .about {
-  padding: 61px 0 32px 0;
+  padding: 60px 0 32px 0;
   background-color: getColor("background");
 }
 
@@ -19,16 +19,13 @@
 }
 
 .about__title {
-  margin: 0 auto;
   margin-bottom: 54px;
-
-  width: 200px;
 
   font-family: getFont("secondary");
   font-size: 30px;
   font-weight: 400;
   line-height: calc(38 / 30);
-  letter-spacing: 0.01px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
 
@@ -36,7 +33,9 @@
 }
 
 .about__wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__img {
@@ -63,9 +62,8 @@
 
 .about__text {
   font-size: 12px;
-  font-weight: 400;
   line-height: calc(21.12 / 12);
-  letter-spacing: 0.01px;
+  letter-spacing: 1px;
   text-align: center;
 
   color: getColor("white");
@@ -73,8 +71,7 @@
 
 .about__description {
   font-size: 12px;
-  font-weight: 400;
-  line-height: calc(19.44 / 12);
+  line-height: calc(18 / 12);
   text-align: center;
 
   color: getColor("white");
@@ -115,7 +112,7 @@
   font-size: 36px;
   font-weight: 700;
   line-height: calc(44 / 36);
-  letter-spacing: 0.01px;
+  letter-spacing: 1px;
 
   color: getColor("white");
 }
@@ -124,7 +121,7 @@
   text-align: center;
 
   font-size: 12px;
-  line-height: calc(20.4 / 12);
+  line-height: calc(20 / 12);
 
   color: getColor("white");
 }

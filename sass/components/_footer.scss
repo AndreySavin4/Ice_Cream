@@ -11,6 +11,7 @@
 }
 
 .footer__title {
+  width: 232px;
   margin-bottom: 16px;
 
   font-size: 18px;
@@ -23,6 +24,7 @@
 }
 
 .footer__pretitle {
+  width: 200px;
   font-size: 34px;
   font-weight: 700;
   line-height: calc(41 / 34);
@@ -88,16 +90,17 @@
 
 .footer__line {
   position: absolute;
-  bottom: 82px;
+  bottom: 80px;
   left: 0;
-  width: 100%;
+  width: 100vw;
   border: 1px solid getColor("border");
 }
 
 .footer__copyright {
-  padding: 20px 0;
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 0 24px 0;
 
-  font-size: 14px;
   font-weight: 700;
   line-height: calc(21.28 / 14);
 

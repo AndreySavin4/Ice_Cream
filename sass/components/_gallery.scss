@@ -13,10 +13,9 @@
 .gallery__content {
 }
 
-.gallry__pic {
+.gallery__pic {
+  margin: 0 auto;
   margin-bottom: 80px;
-
-  height: 130px;
 
   border-radius: 8px;
 }
@@ -30,15 +29,21 @@
   margin-bottom: 12px;
 }
 
-.gallery__comment {
-  padding: 35px 39px;
+.gallery__img {
+  width: 85px;
+  height: 85px;
+}
 
+.gallery__comment {
+  width: 280px;
+
+  padding: 35px 39px;
   border-radius: 10px;
 
   text-align: center;
 
   font-size: 12px;
-  line-height: calc(30.6 / 12);
+  line-height: calc(30 / 12);
 
   color: getColor("white");
 
@@ -46,8 +51,6 @@
 }
 
 .gallery__name {
-  text-align: center;
-
   font-size: 20px;
   font-weight: 500;
   line-height: calc(37.2 / 20);

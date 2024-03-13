@@ -2,7 +2,7 @@
 @import "../utils/fonts";
 
 .product {
-  padding: 61px 0;
+  padding: 60px 0;
 }
 
 .product__pretitle {
@@ -20,8 +20,8 @@
   font-family: getFont("secondary");
   font-size: 30px;
   font-weight: 400;
-  line-height: calc(37 / 30);
-  letter-spacing: 0.1px;
+  line-height: calc(38 / 30);
+  letter-spacing: 1px;
 
   text-align: center;
   text-transform: uppercase;
@@ -42,6 +42,8 @@
 
   border-radius: 24px;
 
+  text-align: center;
+
   &::before {
     content: "";
     position: absolute;
@@ -53,7 +55,7 @@
 
     border-radius: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -110,7 +112,7 @@
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     padding: 0 60px 16px 60px;
   }
 }
@@ -122,25 +124,19 @@
   font-size: 20px;
   font-weight: 700;
   line-height: calc(24 / 20);
-  letter-spacing: 0.1px;
-  text-align: center;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .product__text {
   margin-bottom: 101px;
 
-  width: 200px;
+  max-width: 200px;
 
-  font-size: 14px;
-  line-height: calc(24.7 / 14);
-  letter-spacing: 0.1px;
-  text-align: center;
+  line-height: calc(24.64 / 14);
+  letter-spacing: 1px;
 }
 
 .product__svg {
-  display: block;
-  margin: 0 auto;
-
   fill: getColor("main");
 }

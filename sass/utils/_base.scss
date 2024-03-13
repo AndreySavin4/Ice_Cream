@@ -3,7 +3,8 @@
 
 body {
   font-family: getFont("main"), sans-serif, serif;
-  font-size: 16px;
+  // <!--Было 16px-->
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
 
@@ -11,10 +12,6 @@ body {
   background-image: url("../../img/background/mobile.jpg");
 
   background-repeat: repeat-y;
-
-  background-position-x: 61%;
-  background-position-y: 12%;
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

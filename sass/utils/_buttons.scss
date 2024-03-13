@@ -6,11 +6,10 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 12px;
-  font-weight: 600;
-  line-height: calc(15 / 14);
-
   border-radius: 10px;
+
+  font-weight: 600;
+  line-height: calc(18 / 14);
 
   color: getColor("totalBlack");
 
@@ -24,10 +23,6 @@
   gap: 4px;
 
   padding: 12px 34px;
-
-  font-size: 14px;
-  font-weight: 600;
-  line-height: calc(18 / 14);
 
   border: none;
 
@@ -47,14 +42,32 @@
   @extend %button;
   gap: 7px;
 
-  padding: 11px 24px;
+  padding: 11px 26px;
   border: 2px solid getColor("primary");
 
-  font-size: 14px;
-  font-weight: 600;
-  line-height: calc(18 / 14);
+  background-color: getColor("opacity");
 
-  color: getColor("totalBlack");
+  &:hover {
+    border-color: getColor("green");
+  }
+
+  &:focus,
+  &:focus .icon__svg {
+    border-color: getColor("green");
+    color: getColor("white");
+    fill: getColor("white");
+  }
+}
+
+.button--border--product {
+  @extend %button;
+  gap: 7px;
+
+  padding: 11px 26px;
+  border: 2px solid getColor("primary");
+
+  font-size: 12px;
+  line-height: calc(15 / 12);
 
   background-color: getColor("opacity");
 
@@ -77,6 +90,9 @@
 
   text-decoration: underline;
 
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
   color: getColor("primary");
 
   background-color: getColor("opacity");
@@ -88,4 +104,9 @@
   &:focus {
     color: getColor("white");
   }
+}
+
+.btn__arrow {
+  background-color: inherit;
+  border: 0;
 }
