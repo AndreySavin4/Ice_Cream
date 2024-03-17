@@ -6,12 +6,29 @@
   background-color: getColor("background");
 }
 
+.footer__conainer {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 32px;
+  }
+}
+
 .footer__quote {
+  width: 232px;
+
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    width: 352px;
+
+    margin-bottom: 0;
+  }
 }
 
 .footer__title {
-  width: 232px;
   margin-bottom: 16px;
 
   font-size: 18px;
@@ -21,10 +38,16 @@
   text-transform: uppercase;
 
   color: getColor("white");
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 8px;
+
+    font-size: 26px;
+    line-height: calc(32 / 26);
+  }
 }
 
 .footer__pretitle {
-  width: 200px;
   font-size: 34px;
   font-weight: 700;
   line-height: calc(41 / 34);
@@ -33,10 +56,19 @@
   text-transform: uppercase;
 
   color: getColor("white");
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
 }
 
 .footer__box {
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__list {
@@ -45,6 +77,12 @@
   gap: 20px;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 30px;
+
+    margin-bottom: 34px;
+  }
 }
 
 .footer__item {
@@ -78,6 +116,10 @@
   line-height: calc(22.32 / 12);
 
   text-align: right;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
 }
 
 .footer__number {
@@ -94,6 +136,10 @@
   left: 0;
   width: 100vw;
   border: 1px solid getColor("border");
+
+  @media screen and (min-width: $tablet) {
+    bottom: 50px;
+  }
 }
 
 .footer__copyright {
@@ -107,4 +153,12 @@
   text-align: center;
 
   color: getColor("rarely");
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+
+    padding: 12px 0;
+
+    line-height: calc(26.4 / 14);
+  }
 }

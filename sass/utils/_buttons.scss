@@ -16,6 +16,10 @@
   background-color: getColor("primary");
 
   cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    line-height: calc(17 / 14);
+  }
 }
 
 .button--fullBg {
@@ -109,4 +113,8 @@
 .btn__arrow {
   background-color: inherit;
   border: 0;
+
+  &--white {
+    margin-right: auto;
+  }
 }

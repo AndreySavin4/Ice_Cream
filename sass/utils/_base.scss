@@ -3,7 +3,6 @@
 
 body {
   font-family: getFont("main"), sans-serif, serif;
-  // <!--Было 16px-->
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -17,6 +16,17 @@ body {
     (min-resolution: 2dppx) {
     background-image: url("../../img/background/mobile@2x.jpg");
     background-size: 885px 1242px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url("../../img/background/tablet.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../img/background/tablet@2x.jpg");
+      background-size: 940px 996px;
+    }
   }
 }
 

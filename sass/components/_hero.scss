@@ -35,28 +35,55 @@
         url("../../img/header_img/dots480@2x.png");
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    height: auto;
+    background-image: url("../../img/header_img/tablet.png"),
+      url("../../img/header_img/dots768.png");
+    background-size: 268px, 100vw;
+    background-position: bottom right 92px, bottom;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../img/header_img/tablet@2x.png"),
+        url("../../img/header_img/dots768@2x.png");
+    }
+  }
 }
 
 .hero__wrap {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
 }
 
 .hero__title {
   max-width: 247px;
   margin-bottom: 32px;
 
+  text-transform: uppercase;
+
   font-family: getFont("secondary");
   font-size: 26px;
   font-weight: 400;
-  line-height: 32.68px;
+  line-height: calc(32.68 / 26);
   letter-spacing: 1px;
 
-  text-transform: uppercase;
   color: getColor("white");
 
   &--span {
     font-size: 34px;
     line-height: 32.81px;
     letter-spacing: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 367px;
+
+    font-size: 38px;
+    line-height: calc(47 / 38);
   }
 }
 
@@ -68,19 +95,74 @@
 
 .hero__wrapper {
   display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    padding-bottom: 12px;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 37px;
 }
 
 .hero__text {
+  max-width: 165px;
+
+  padding-top: 15px;
+
+  font-family: getFont("third");
+  font-size: 12px;
+  line-height: calc(16.8 / 12);
+
+  color: getColor("white");
 }
 
 .hero__arrow {
+  fill: getColor("white");
 }
 
 .hero__restaurant {
   display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .hero__chain {
+  text-align: right;
+
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  color: getColor("white");
   &--number {
+    display: block;
+
+    margin-bottom: 4px;
+
+    text-transform: uppercase;
+
+    font-size: 28px;
+    font-weight: 900;
+    line-height: calc(34 / 28);
+    letter-spacing: 1px;
+
+    color: getColor("main");
   }
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

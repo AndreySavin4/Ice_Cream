@@ -4,6 +4,10 @@
 .about {
   padding: 60px 0 32px 0;
   background-color: getColor("background");
+
+  @media screen and (min-width: $tablet) {
+    padding: 60px 0;
+  }
 }
 
 .about__pretitle {
@@ -16,6 +20,12 @@
   text-transform: uppercase;
 
   color: getColor("white");
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: calc(27 / 22);
+  }
 }
 
 .about__title {
@@ -30,22 +40,40 @@
   text-transform: uppercase;
 
   color: getColor("white");
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 72px;
+
+    font-size: 34px;
+    line-height: calc(42 / 34);
+    letter-spacing: 1.5px;
+  }
 }
 
 .about__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 38px;
+  }
 }
 
 .about__img {
   margin-bottom: 40px;
 
-  width: 279px;
-  height: 278px;
   border-radius: 50%;
 
   box-shadow: 0px -22px 0px 0px rgb(239, 212, 120);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.about__card {
 }
 
 .about__content {
@@ -54,10 +82,17 @@
   gap: 4px;
 
   margin: 0 auto;
-
   margin-bottom: 24px;
 
   width: 220px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 8px;
+
+    margin-bottom: 32px;
+
+    width: auto;
+  }
 }
 
 .about__text {
@@ -72,6 +107,7 @@
 .about__description {
   font-size: 12px;
   line-height: calc(18 / 12);
+  letter-spacing: 1px;
   text-align: center;
 
   color: getColor("white");
@@ -84,6 +120,13 @@
   gap: 28px;
 
   margin-top: 50px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 80px;
+
+    margin-top: 60px;
+  }
 }
 
 .about__item {
@@ -94,6 +137,12 @@
   gap: 16px;
 
   width: 230px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 0;
+
+    width: auto;
+  }
 }
 
 .about__iconBlock {
@@ -115,6 +164,13 @@
   letter-spacing: 1px;
 
   color: getColor("white");
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 32px;
+
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
 }
 
 .about__detail {
@@ -124,4 +180,11 @@
   line-height: calc(20 / 12);
 
   color: getColor("white");
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 12px;
+
+    font-size: 14px;
+    line-height: calc(24.36 / 14);
+  }
 }

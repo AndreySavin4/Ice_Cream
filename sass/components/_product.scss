@@ -12,6 +12,11 @@
   font-weight: 800;
   line-height: calc(22 / 18);
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
 }
 
 .product__title {
@@ -25,6 +30,13 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 200px;
+
+    font-size: 34px;
+    line-height: calc(42.78 / 32);
+  }
 }
 
 .product__list {
@@ -33,6 +45,11 @@
   justify-content: center;
   align-items: center;
   gap: 168px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 
 .product__item {
@@ -43,6 +60,17 @@
   border-radius: 24px;
 
   text-align: center;
+
+  @media screen and (min-width: $mobile) {
+    padding: 0 60px 16px 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    height: 428px;
+    padding: 0 26px 12px 26px;
+  }
 
   &::before {
     content: "";
@@ -111,14 +139,25 @@
       }
     }
   }
+}
+
+.product__card {
+  flex-grow: 1;
+
+  margin-top: 126px;
+  margin-bottom: 101px;
 
   @media screen and (min-width: $mobile) {
-    padding: 0 60px 16px 60px;
+    margin-bottom: 106px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 108px;
+    margin-bottom: 0;
   }
 }
 
 .product__desc {
-  margin-top: 126px;
   margin-bottom: 40px;
 
   font-size: 20px;
@@ -126,11 +165,14 @@
   line-height: calc(24 / 20);
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
 }
 
 .product__text {
-  margin-bottom: 101px;
-
   max-width: 200px;
 
   line-height: calc(24.64 / 14);

@@ -1,5 +1,6 @@
 @import "../utils/colors";
 @import "../utils/fonts";
+@import "../utils/buttons";
 
 .header {
   padding: 12px 0 50px;
@@ -7,6 +8,10 @@
 
   @media screen and (min-width: $mobile) {
     padding: 14px 0 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 20px 0 14px;
   }
 }
 
@@ -36,17 +41,24 @@
 .header__link {
 }
 
-.btn_container {
+.btn__wrap {
+  display: flex;
+  gap: 32px;
 }
 
-.moble__btn {
+.mob__menu {
   border: none;
   background-color: inherit;
 }
 
-.mobile_menu {
+.mobile_icon {
 }
 
 .header__btn {
   display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    padding: 12px 36px;
+  }
 }

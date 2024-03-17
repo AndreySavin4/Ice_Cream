@@ -51,14 +51,17 @@
             </li>
           </ul>
 
-          <div class="btn_container">
-            <button class="moble__btn" type="button">
-              <svg class="mobile_menu" width="32" height="32">
+          <div class="btn__wrap">
+            <button class="mob__menu" type="button">
+              <svg class="mobile_icon" width="32" height="32">
                 <use href="./img/symbol-defs.svg#icon-mobile-menu"></use>
               </svg>
             </button>
-            <button class="header__btn botton__full" type="button">
+            <button class="button--fullBg header__btn" type="button">
               Buy now
+              <svg width="12" height="12">
+                <use href="./img/symbol-defs.svg#icon-vector"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -69,39 +72,58 @@
       <h1 class="visually-hidden">Ice cream</h1>
       <section class="hero">
         <div class="container">
-          <div class="hero__wrap">
-            <h2 class="hero__title">
-              ice cream made with <span class="hero__title--span">passion</span>
-            </h2>
+          <div class="div">
+            <div class="hero__wrap">
+              <h2 class="hero__title">
+                ice cream made with
+                <span class="hero__title--span">passion</span>
+              </h2>
 
-            <div class="btn_container">
-              <button class="button--border--product" type="button">
-                Product
-              </button>
-              <button class="button--withoutBorder" type="button">
-                How it’s made?
-              </button>
+              <div class="btn_container">
+                <button class="button--border--product" type="button">
+                  Product
+                </button>
+                <button class="button--withoutBorder" type="button">
+                  How it’s made?
+                </button>
+              </div>
+            </div>
+
+            <div class="hero__restaurant">
+              <p class="hero__chain">
+                <span class="hero__chain--number">16</span> cafes
+              </p>
+              <p class="hero__chain">
+                <span class="hero__chain--number">23</span>food trucks
+              </p>
             </div>
           </div>
 
           <div class="hero__wrapper">
-            <img src="" alt="Ice cream" loading="lazy" />
-            <p class="hero__text">
-              Indulge in a scoop of ice cream made with passion and treat your
-              taste buds to an unforgettable experience!
-              <svg class="hero__arrow">
-                <use href="./img/symbol-defs.svg#icon-arrow"></use>
-              </svg>
-            </p>
-          </div>
+            <img
+              srcset="
+                ./img/header_img/more_tablet.png     152w,
+                ./img/header_img/more_tablet@2x.png  304w,
+                ./img/header_img/more_desktop.png    225w,
+                ./img/header_img/more_desktop@2x.png 450w
+              "
+              sizes="(min-width:1200px) 225px, (min-width:768px) 152px"
+              src="./img/header_img/more_tablet.png"
+              alt="Ice cream"
+              loading="lazy"
+            />
+            <div class="hero__content">
+              <p class="hero__text">
+                Indulge in a scoop of ice cream made with passion and treat your
+                taste buds to an unforgettable experience!
+              </p>
 
-          <div class="hero__restaurant">
-            <p class="hero__chain">
-              <span class="hero__chain--number">16</span> cafes
-            </p>
-            <p class="hero__chain">
-              <span class="hero__chain--number">23</span>food trucks
-            </p>
+              <button class="btn__arrow btn__arrow--white" type="button">
+                <svg class="hero__arrow" width="40" height="16">
+                  <use href="./img/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -112,11 +134,13 @@
           <h2 class="product__title">products</h2>
           <ul class="product__list">
             <li class="product__item">
-              <h3 class="product__desc">ice cream</h3>
-              <p class="product__text">
-                Soft ice cream with a delicate taste. Made with milk, cream,
-                sugar and natural stabilizer
-              </p>
+              <div class="product__card">
+                <h3 class="product__desc">ice cream</h3>
+                <p class="product__text">
+                  Soft ice cream with a delicate taste. Made with milk, cream,
+                  sugar and natural stabilizer
+                </p>
+              </div>
               <button class="btn__arrow" type="button">
                 <svg class="product__svg" width="40" height="16">
                   <use href="./img/symbol-defs.svg#icon-arrow"></use>
@@ -124,12 +148,14 @@
               </button>
             </li>
             <li class="product__item">
-              <h3 class="product__desc">ice coffee</h3>
-              <p class="product__text">
-                Fragrant invigorating drink created from 100% natural
-                ingredients without the use of preservatives and flavor
-                enhancers
-              </p>
+              <div class="product__card">
+                <h3 class="product__desc">ice coffee</h3>
+                <p class="product__text">
+                  Fragrant invigorating drink created from 100% natural
+                  ingredients without the use of preservatives and flavor
+                  enhancers
+                </p>
+              </div>
               <button class="btn__arrow" type="button">
                 <svg class="product__svg" width="40" height="16">
                   <use href="./img/symbol-defs.svg#icon-arrow"></use>
@@ -137,11 +163,13 @@
               </button>
             </li>
             <li class="product__item">
-              <h3 class="product__desc">milkshakes</h3>
-              <p class="product__text">
-                Sweet drinks based on milk and ice cream, supplemented with
-                syrups, fruits, berries and other sweets of your choice
-              </p>
+              <div class="product__card">
+                <h3 class="product__desc">milkshakes</h3>
+                <p class="product__text">
+                  Sweet drinks based on milk and ice cream, supplemented with
+                  syrups, fruits, berries and other sweets of your choice
+                </p>
+              </div>
               <button class="btn__arrow" type="button">
                 <svg class="product__svg" width="40" height="16">
                   <use href="./img/symbol-defs.svg#icon-arrow"></use>
@@ -160,34 +188,45 @@
           <div class="about__wrapper">
             <img
               class="about__img"
-              src="./img/about/michael-martinelli-_nLlvmclDkc-unsplash 1.jpg"
+              srcset="
+                ./img/about/cow-279.jpg 279w,
+                ./img/about/cow-330.jpg 330w,
+                ./img/about/cow-490.jpg 490w,
+                ./img/about/cow-558.jpg 558w,
+                ./img/about/cow-660.jpg 660w,
+                ./img/about/cow-980.jpg 980w
+              "
+              sizes="(min-width:1200px) 490px, (min-width:768px) 330px, 279px"
+              src="./img/about/cow-279.jpg"
               alt="Сow eats grass in the meadow"
               loading="lazy"
             />
 
-            <div class="about__content">
-              <p class="about__text">
-                Ice is a place where you will become not only a little happier,
-                but also healthier. Health is the main value for us, and we
-                follow it when creating our handmade desserts.
-              </p>
-              <p class="about__description">
-                We use traditional recipes and 100% natural ingredients. Our
-                products are so natural that they can be given to children from
-                the age of three years. Sweets lovers can expect 55 types of ice
-                cream, 15 types of coffee and 23 milkshakes.
-              </p>
-              <p class="about__description">
-                This is enough to choose ice cream and coffee for any mood!
-              </p>
-            </div>
+            <div class="about__card">
+              <div class="about__content">
+                <p class="about__text">
+                  Ice is a place where you will become not only a little
+                  happier, but also healthier. Health is the main value for us,
+                  and we follow it when creating our handmade desserts.
+                </p>
+                <p class="about__description">
+                  We use traditional recipes and 100% natural ingredients. Our
+                  products are so natural that they can be given to children
+                  from the age of three years. Sweets lovers can expect 55 types
+                  of ice cream, 15 types of coffee and 23 milkshakes.
+                </p>
+                <p class="about__description">
+                  This is enough to choose ice cream and coffee for any mood!
+                </p>
+              </div>
 
-            <button class="button--fullBg" type="button">
-              Read more
-              <svg class="icon__svg" width="12" height="12">
-                <use href="./img/symbol-defs.svg#icon-vector"></use>
-              </svg>
-            </button>
+              <button class="button--fullBg" type="button">
+                Read more
+                <svg class="icon__svg" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#icon-vector"></use>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <ul class="about__list">
@@ -280,6 +319,7 @@
 
               <p class="gallery__name">Emily, Los Angeles</p>
             </div>
+
             <ul class="gallery__list">
               <li class="galeery__item">
                 <svg class="gallery__dot--active" width="12" height="12">
@@ -396,35 +436,37 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__quote">
-          <h2 class="footer__title">homemade ice cream made</h2>
-          <p class="footer__pretitle">with passion</p>
-        </div>
-        <div class="footer__box">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#"
-                ><svg class="footer__icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-github"></use></svg
-              ></a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#"
-                ><svg class="footer__icon" width="20" height="16">
-                  <use href="./img/symbol-defs.svg#icon-telegram"></use></svg
-              ></a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#"
-                ><svg class="footer__icon" width="9" height="20">
-                  <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-          </ul>
-          <p class="footer__contact">
-            Feel free to contact
-            <a class="footer__number" href="#">+61 (0) 383 766 284</a>
-          </p>
+        <div class="footer__conainer">
+          <div class="footer__quote">
+            <h2 class="footer__title">homemade ice cream made</h2>
+            <p class="footer__pretitle">with passion</p>
+          </div>
+          <div class="footer__box">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#"
+                  ><svg class="footer__icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-github"></use></svg
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"
+                  ><svg class="footer__icon" width="20" height="16">
+                    <use href="./img/symbol-defs.svg#icon-telegram"></use></svg
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"
+                  ><svg class="footer__icon" width="9" height="20">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+            </ul>
+            <p class="footer__contact">
+              Feel free to contact
+              <a class="footer__number" href="#">+61 (0) 383 766 284</a>
+            </p>
+          </div>
         </div>
         <div class="footer__line"></div>
         <p class="footer__copyright">
